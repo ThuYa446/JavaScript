@@ -1,0 +1,296 @@
+body{
+    margin: 0;
+}
+.nav-fixed {
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+ul li{
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* This is the End of menu bar  */
+
+.page-over-menubar{
+    margin-top: 50px;
+    margin: 50px 20px 20px 20px; /* top right bottom left */
+}
+
+.rgb{
+    color: rgb(102, 72, 72);
+    background-color: rgb(204, 196, 196);
+}
+
+#hex {
+    color: #835151;
+    background-color: antiquewhite;
+}
+
+.page-over-menubar .p0 {
+    background-image: url("./sunrise.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    border: 5px solid #835151;
+    border-width: 3px;
+    border-style: groove;
+    border-radius: 10px;
+    color: #f1f1f1;
+    line-height: 20px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.col-div {
+    width: 48%;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.col-div p {
+    border: 1px solid red;
+    background-color: azure;
+    outline-style: dashed;
+    outline-width: 2px;
+    outline-color: #835151;
+    outline-offset: 5px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  
+    .col-div {
+        width: 98%;
+    }
+}
+
+.t1 {
+    color: black;
+    background-color: #f1f1f1;
+    text-shadow: 2px 2px red;
+
+    font-family: 'Tangerine', serif;
+    font-style: italic;
+    font-size:50px;
+    font-weight: bolder;
+}
+
+.t2{
+    text-decoration-line: underline;
+    text-decoration-color: #835151;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px;
+    text-transform: capitalize;
+}
+
+.t3 {
+    text-align: justify;
+    text-align-last: center;
+    text-indent: 30px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 20px;
+}
+
+i {
+    padding-left: 50px;
+    font-size: 50px;
+    color: royalblue;
+}
+
+.google {
+    text-decoration: none;
+    border: 3px solid #0df32c;
+    border-radius: 30px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.google:visited {
+    color: black;
+    background-color: black;
+}
+
+.google:hover {
+    color: white;
+    background-color: rgb(20, 193, 236);
+}
+
+.google:active {
+    color:white;
+    background-color:rgb(240, 10, 10);
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid rgb(212, 210, 210);
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0483aa;
+    color: white;
+  }
+
+p.dis-none {
+    display: none;
+}
+
+p.dis-inline {
+    display: inline;
+}
+
+p.dis-hid {
+   visibility: hidden;
+}
+
+div.pos-static {
+    position: static;
+    top: 50px;
+    border: 2px solid #0483aa;
+}
+
+div.pos-relative {
+    position: relative;
+    left: 50px;
+    border: 2px solid #0483aa;
+}
+
+div.pos-fixed {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+}
+
+div.pos-fixed a{
+    text-decoration: none;
+    background-color: cornflowerblue;
+    border: 3px solid #0df32c;
+    border-radius: 30px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+div.pos-absolute {
+    position: absolute;
+    border: 2px solid #0483aa;
+}
+
+div.img-relative {
+    position: relative;
+    margin: 20px;
+}
+
+div.img-relative img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+div.img-text{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    font-size: 40px;
+    text-align: center;
+}
+
+div.pos-sticky {
+    position: sticky;
+    bottom: 0;
+    background-color: antiquewhite;
+    border: 2px solid #0483aa;
+}
+
+
+/* This is the End of menu bar 
+.img-div {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.dropdown-img {
+    position: absolute;
+    z-index: -1;
+}
+
+.dropdown-size{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 16px 16px 0px rgba(17, 17, 17, 0.39);
+    z-index: 1;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.dropdown-img:hover .dropdown-size{
+    display: block;
+}
+*/
