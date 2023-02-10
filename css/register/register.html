@@ -53,6 +53,14 @@
             </div>
 
             <div class="section">
+                <label for="dob">Date of Birth:</label>
+                <div class="form-prop">
+                    <button disabled="disabled"> <i class="fas fa-calendar"></i></button>
+                    <input type="date" name="dob" id="dob">
+                </div>
+            </div>
+
+            <div class="section">
                 <label for="email">E-Mail:</label>
                 <div class="form-prop">
                     <button disabled="disabled"> <i class="fas fa-mailbox"></i></button>
@@ -93,7 +101,7 @@
                 <div class="gender-prop">
                    <button disabled="disabled"> <i class="fas fa-thumbs-up"></i></button>
                     <input type="checkbox" name="hob" id="c" class="avoidme">
-                    <label for="c">C Language</label>
+                    <label for="c">C#</label>
 
                     <input type="checkbox" name="hob" id="java" class="avoidme">
                     <label for="java">Java</label>
@@ -103,6 +111,42 @@
                 </div>
             </div>
 
+            <div class="section">
+                <label for="job">Select Position:</label>
+                <div class="form-prop">
+                    <button disabled="disabled"> <i class="fas fa-ticket"></i></button>
+                    <select name="job" id="job" class="avoidme">
+                        <option value="jjd">Junior Java Developer</option>
+                        <option value="sjd">Senior Java Developer</option>
+                        <option value="jcd">Junior C# Developer</option>
+                        <option value="scd">Senior C# Developer</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="section">
+                <label for="attach">Attach File:</label>
+                <div class="form-prop">
+                   <button disabled="disabled"> <i class="fas fa-file"></i></button>
+                   <!--
+                   <label for="attach" class="custom-upload"><i class="fas fa-upload" 
+                   style="color: blueviolet; padding-right: 10px;"></i>Upload CV Form</label>
+                   -->
+                   <input type="file" name="attach" id="attach" accept=".zip">
+                </div>
+            </div>
+
+            <div class="section">
+                <label for="addr">Address:</label>
+                <div class="form-prop">
+                    <button disabled="disabled"> <i class="fas fa-address-card"></i></button>
+                  <textarea name="addr" id="" cols="50" rows="5"></textarea>
+                </div>
+            </div>
+
+            <div class="section">
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </div>
 </body>

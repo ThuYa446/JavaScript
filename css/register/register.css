@@ -126,7 +126,7 @@ input:not(.avoidme){
     padding: 8px 8px;
 }
 
-input:focus{
+input:focus, textarea,select{
     outline: none;
 }
 
@@ -141,3 +141,38 @@ input:focus{
     padding-right: 20px;
 }
 
+/*
+input[type=file] {
+    display: none;
+}
+*/
+
+.custom-upload {
+    border: 1px solid white;
+    padding: 10px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+textarea,select {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    padding: 10px;
+    overflow: hidden;
+    resize: none;
+}
+
+select::after option{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    border: none;
+    background-color: #cecdcd;
+   font-weight: bolder;
+}
