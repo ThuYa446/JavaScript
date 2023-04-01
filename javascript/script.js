@@ -74,7 +74,7 @@ var num1 = "Thu Ya"; // var variable can be re declare
 let num2 = 'Thu Ya';
 //let num2 = 5667.78; // let variable can not be re declare
 
-// Use let keyword if the value of the variable can not be changed or
+// Use const keyword if the value of the variable can not be changed or
 // within block, cannot call from outside of the block  {}
 const price1 = 4.5;
 const price2 = 8;
@@ -84,9 +84,89 @@ const price2 = 8;
 // price3 = 0; Error the value is already assigned can not assign twice;
 let price3 = price1 + price2;
 //price3 = 6;
-console.log(price3);
+//console.log(price3);
 
+// 6. JavaScript Operators
+// Assign a to addtion of z and y
+let c = 3 + 6; //  = sign mean assignment operator, + sign mean addtion operator
 
+// 6.a Arithmetic Operator
+ c = 2 + 3;  // result - 5
+ c = 5 - 3;  // result - 2
+ c = 2 * 3;  // result - 6
+ c = 6 / 3;  // result - 2
+ c = 7 % 3;  // result - 1
+ c = 2 ** 3; // result - 8
+ let d = c++;// result - 8 
+ d = ++c;    // result - 10
+ d = d--;    // result - 10
+ let e = --d;// result - 9
+// console.log(e);
+
+ // 6.b Assignment Operator
+ e = 1      // result - 1
+ e += 2      // result - 3  same as e = e + 2
+ e -= 1      // result - 2  same as e = e - 1
+ e *= 3      // result - 6  same as e = e * 3
+ e /= 3      // result - 2  same as e = e / 3
+ e %= 2 + 1 ;// result - 2  same as e = e % 2
+ e **= 2     // result - 4  same as e = e ** 2
+// console.log(e);
+
+// 6.c Comparison Operator
+    // ==, ===, !=, !==, >, <, >=, <=, ?
+
+// 6.d Logical Operator
+    // &&, ||, !
+
+// 7. JavaScript Data Types
+    let f = "Hello " // String data type
+    f = 123.56       // Number data type
+    f = true         // Boolean data type
+    f = BigInt(12345543545545567787888989); // BigInt Data Type
+    f = [1,2,3,4,5,6,7] // Array Data Type
+    f = {"firstName":"ThuYa","lastName":"Oo","Age":25,"isStudent":false,"totalNet":345000.78} // Object Data Type
+    /*
+    f = [
+        {"firstName":"ThuYa","lastName":"Oo","Age":25,"isStudent":false,"totalNet":345000.78} ,
+        {"firstName":"John","lastName":"David","Age":12,"isStudent":true,"totalNet":300.78} 
+    ]; // Object Array data type
+    */
+    const personInfo = {"firstName":"ThuYa","lastName":"Oo",
+    "fullName":function(){return this.firstName + this.lastName},
+    "Age":25,"isStudent":false,"totalNet":345000.78}; // Object Method
+    let g; // Undefined Data Type
+    g = null  // Null data type
+    // Access Object Properties
+    //console.log(f.isStudent,f["firstName"],personInfo.fullName()); // Two Type of Accessing Object and Object Method
+
+//  8. Functions
+//8 a. Return Function
+function addTwoNumber(a,b){ // a and b are parameters
+    return a+b;
+}
+const number = (a,b) => a+b;
+console.log(number(2,5))
+//console.log(addTwoNumber(2,5)); // 2 and 5 are arguments
+
+// 8 b. Not Retun (Void) Function
+function sayMessage(message){
+    console.log(message);
+}
+//sayMessage("This is the void function woring");
+
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+}
+//console.log(toCelsius(210));
+
+// 9 JavaScript Event
+    // onchange,onclick,onmouseover,onmouseout,onkeydown,onload
+
+function diplayDate(){
+    const date = document.getElementById("date");
+    date.innerHTML = "Today Date is: "+ new Date();
+}
 
 
 
