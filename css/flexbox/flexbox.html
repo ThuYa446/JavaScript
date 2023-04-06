@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon link -->
+    <link rel="shortcut icon" type="image/ico" href="logos.ico">
+    <!-- Exgternal CSS link -->
+    <link rel="stylesheet" href="flexbox.css">
+    <!-- Google Font link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>CSS Style Sheet</title>
+</head>
+<body>
+    <div class="nav-fixed">
+        <ul>
+            <li><a href="./register/register.html">Register</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Layout</a>
+                <div class="dropdown-content">
+                    <a href="./flexbox/flexbox.html">Flex Box Layout</a>
+                    <a href="#">Grid Layout</a>
+                    <a href="#">Common Layout</a>
+                </div>
+            </li>
+        <li><a href="#">Shop</a></li>
+        <li style="float: right;"><a href="#">Sign Out</a></li>
+        </ul>
+    </div>
+    <div class="page-over-menubar">
+        <div class="flex-container">
+            <div>FlexBox 1</div>
+            <div>FlexBox 2</div>
+            <div>FlexBox 3</div>
+            <div>FlexBox 4</div>
+            <div>FlexBox 5</div>
+            <div>FlexBox 6</div>
+        </div>
+        <div class="flex-container2">
+            <div>FlexBox 1</div>
+            <div>FlexBox 2</div>
+            <div>FlexBox 3</div>
+            <div>FlexBox 4</div>
+            <div>FlexBox 5</div>
+            <div>FlexBox 6</div>
+        </div>
+
+        <div class="flex-container3">
+            <div style="order: 6;">FlexBox 1</div>
+            <div style="order: 5;flex-shrink: 1;">FlexBox 2</div>
+            <div style="order: 3;flex-grow: 13;">FlexBox 3</div>
+            <div style="order: 2; flex-grow: 0;">FlexBox 4</div>
+            <div style="order: 4; flex-basis: 250px;">FlexBox 5</div>
+            <div style="order: 1; align-self: start;">FlexBox 6</div>
+            <div style="order: 7; align-self: end;">FlexBox 7</div>
+            <div style="order: 8;">FlexBox 8</div>
+        </div>
+    </div>
+</body>
+</html>
