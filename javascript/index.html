@@ -11,7 +11,13 @@
 </head>
 <body>
     <h1 id="welcome"></h1>
-    <p id = "date"> Today Date is: </p>
-    <button onmouseover="diplayDate()">Click Me</button>
+    <div>
+        <p id = "date"> Today Date is: </p>
+        <button onclick="diplayDate()">Click Me</button>
+    </div>
+    <br>
+    <label for="name">Name :</label><input type="text" name="fname" id="name" onchange="showNames()">
+    <label for="showname">My Name is:</label> <label id="showname"></label>
+    
 </body>
 </html>

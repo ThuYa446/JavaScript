@@ -168,6 +168,37 @@ function diplayDate(){
     date.innerHTML = "Today Date is: "+ new Date();
 }
 
+// 10 JavaScript Objects
+    // Object can contain many value; It is a variable too.
+const car = {type:"Fiat",model:"2020",color:"White"};
+
+    // Access Object value
+//console.log(car.type,car["model"]);
+
+    // Object Method
+    // age is not a variable type, It is Function
+    // persons is called Object
+    // "name" is called property
+    // "ThuYa Oo" is called property value
+    // "this" is a keyword, not a variable.So you can change it value
+const persons = {name:"ThuYa Oo",birthYear:1997,relationship:false,age:function(){return 2023-this.birthYear}};
+
+    //Accessing Object Method Value () call parentheses
+//console.log(persons.age()); 
+
+// 10 JavaScript Event
+
+const text = document.getElementById("name");
+const showName = document.getElementById("showname");
+
+function showNames(){
+    showName.innerHTML = text.value;
+}
+
+
+
+
+
 
 
 
