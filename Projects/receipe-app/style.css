@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+
+body{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    margin: 0px;
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.mobile-container{
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:0 0 10px 5px rgba(100,100,100,0.1);
+}
+.mobile-container h1{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header input{
+    padding: 0.5rem;
+    border-radius: 5px 0px 0px 5px ;
+    border: none;
+    background-color: #eee;
+}
+
+header button{
+    background-color: #eee;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    height: 31px;
+    cursor: pointer;
+}
+header button:hover{
+    background-color: rgb(211, 206, 206);
+}
+
+.fav-container{
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(224, 222, 222);
+}
+.fav-meals{
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    overflow: auto;
+    text-align: center;
+   
+}
+
+.fav-meals li{
+   position: relative;
+   width: 100px;
+   margin: 5px;
+   padding: 0.5rem;
+   cursor: pointer;
+}
+.fav-meals li img{
+    border: 2px solid #948aac;
+    box-shadow:0 0 10px 5px rgba(143, 139, 139, 0.1);
+    border-radius: 10%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+.fav-meals li span{
+    padding: 0rem;
+}
+.fav-meals li .clear{
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    background-color: transparent;
+    display: inline-block;
+    top: 0px;
+    right: -5px;
+    opacity: 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.fav-meals li:hover .clear {
+    opacity: 1;
+    color: red;
+}
+
+
+.meals{
+    background-color: rgb(224, 222, 222);
+    padding: 1rem;
+}
+
+.meal{
+    margin: 1.5rem;
+    border-radius: 5px;
+    box-shadow:0 0 10px 5px rgba(143, 139, 139, 0.1);
+    overflow: hidden;
+    background-color: white;
+}
+
+.meal-header{
+    position: relative;
+}
+.meal-header .random{
+    position: absolute;
+    top: 20px;
+    background-color: white;
+    padding: 5px 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.meal-header img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.meal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.meal-body .fav-btn{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1rem;
+    color: rgb(197, 188, 188)
+}
+
+.meal-body .fav-btn.active{
+    color: red;
+}
+
+.popup-container{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+.popup-container.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.popup-info{
+    background-color: aliceblue;
+    max-width: 700px;
+    max-height: 100vh;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    position: relative;
+    justify-items: center;
+    border-radius: 5px;
+    overflow: auto;
+}
+.popup-info h1{
+    text-align: center;
+}
+.popup-info img{
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 1rem;
+    box-shadow:0 0 10px 10px rgba(150, 148, 148, 0.1);
+}
+.popup-info p{
+    display: contents;
+}
+
+.instruction{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border: none;
+}
+table thead th{
+    margin: 0;
+    padding: 0.2rem;
+}
+table tr td{
+    padding: 0.2rem;
+}
+
+.close{
+    float: right;
+    padding: 0.3rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.close:hover {
+    color: red;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Recipe App</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="mobile-container">
+            <h1>Recipe App</h1>
+            <header>
+                    <input type="text" name="search" id="searchText"/>
+                    <button id="search"><i class="fas fa-search"></i></button>
+            </header>
+            <div class="fav-container">
+                <h3>Favourite Meals And Drinks</h3>
+                <ul class="fav-meals" id="fav-meals">
+                    <li>
+                        <img src="./menu/Chicken-Masala.jpg" alt="Chicken Masala">
+                        <span>Chicken Masala</span>
+                        <button class="clear"><i class="fas fa-times"></i></button>
+                    </li>
+                    <li>
+                        <img src="./menu/Chutney-Sandwich.jpg" alt="Chutney Sandwich">
+                        <span>Chutney Sandwich</span>
+                        <button class="clear"><i class="fas fa-times"></i></button>
+                    </li>
+                    <li>
+                        <img src="./menu/Coconut-Mojito.jpg" alt="Coconut Mojito">
+                        <span>Coconut Mojito</span>
+                        <button class="clear"><i class="fas fa-times"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="meals" id="meals">
+                <div class="meal">
+                    <div class="meal-header">
+                        <span class="random">Random Recipe</span>
+                        <img src="./menu/Cranberry-Cocktail.jpg" alt="Cranberry Cocktail"/>
+                    </div>
+                    <div class="meal-body">
+                        <h4>Cranberry Cocktail</h4>
+                        <button class="fav-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="meal">
+                    <div class="meal-header">
+                        <span class="random">Random Recipe</span>
+                        <img src="./menu/Fried-Chicken-Potatoe.jpg" alt="Fried Chicken Potatoe"/>
+                    </div>
+                    <div class="meal-body">
+                        <h4>Fried Chicken Potatoe</h4>
+                        <button class="fav-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="popup-container hidden" id="popup-menu">
+            <div class="popup-info">
+                <button class="close" id="close-popup"><i class="fas fa-times"></i></button>
+                <div class="meal-info" id="meal-info">
+                    <div>
+                        <h1>Coconut-Mojito </h1>
+                        <img src="./menu/Spanish-Tortilla.jpg" alt="Spanish Tortilla"/>
+                        <h3 style="text-align:center;"> Ingredients: </h3>
+                        <div class="instruction">
+                            <ol>
+                               <li>Onion</li>
+                               <li>Olive Oil</li>
+                               <li>Butter</li>
+                               <li>Potatoes</li>
+                               <li>Garlic</li>
+                            </ol>
+                            <ul style="list-style-type:none;">
+                               <li><span style="font-weight:bold;">--></span> 1 sliced</li>
+                               <li><span style="font-weight:bold;">--></span> 4 tbsp</li>
+                               <li><span style="font-weight:bold;">--></span> 25g </li>
+                               <li><span style="font-weight:bold;">--></span> 400g</li>
+                               <li><span style="font-weight:bold;">--></span> 6 cloves</li>
+                            </ul>   
+                        </div>
+                        <h3 style="text-align:center;"> Instruction: </h3>
+                        <p>Put a large non-stick frying pan on a low heat. Cook the onion slowly in the oil and butter until soft but not brown – this should take about 15 mins. Add the potatoes, cover the pan and cook for a further 15-20 mins, stirring occasionally to make sure they fry evenly. When the potatoes are soft and the onion is shiny, crush 2 garlic cloves and stir in, followed by the beaten eggs. Put the lid back on the pan and leave the tortilla to cook gently. After 20 mins, the edges and base should be golden, the top set but the middle still a little wobbly. To turn it over, slide it onto a plate and put another plate on top, turn the whole thing over and slide it back into the pan to finish cooking. Once cooked, transfer to a plate and serve the tortilla warm or cold, scattered with the chopped parsley. To accompany, take slices of warmed baguette, stab all over with a fork and rub with the remaining garlic, pile on grated tomatoes and season with sea salt and a drizzle of olive oil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+</html>
