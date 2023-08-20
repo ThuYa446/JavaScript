@@ -10,14 +10,30 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1 id="welcome"></h1>
+    <h1 id="welcome">This is Value.</h1>
+    
     <div>
         <p id = "date"> Today Date is: </p>
         <button onclick="diplayDate()">Click Me</button>
     </div>
     <br>
+
     <label for="name">Name :</label><input type="text" name="fname" id="name" onchange="showNames()">
     <label for="showname">My Name is:</label> <label id="showname"></label>
-    
+    <br>
+
+    <label for="mouseover" onmouseover="mouseOver()">Move Over Me to show Magic.</label> 
+    <br>
+    <label for="mouseout" onmouseout="mouseOut()">Move Out Me to show Magic.</label>
+    <label id="mouseevent"></label>
+    <br>
+    <div>
+        <label for="name">KeyDown :</label><input type="text" name="fname" id="kdown" onkeydown="keyDown()">
+        <label id="kdownText"></label>
+    </div>
+
+    <br>
+
+
 </body>
 </html>

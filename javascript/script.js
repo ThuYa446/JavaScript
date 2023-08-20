@@ -11,6 +11,7 @@ var A; // JavaScript Language is Case Sensitive
 // 2. Use Variable
 a = 1; // Assign value to a declared variable
 A = a + 4;
+console.log(a,A);
 
 // 3.Java Script Operator
 // JavaScript's Operator Precedence (),*,/,+ & - 
@@ -45,10 +46,10 @@ num = 56;            // Number format with Integer Value
 // console.log(typeof(num));
 num = true;         // Boolean data type
 // console.log(typeof(num));
-num = "Thu Ya Oo";  // String data type with "" 
-//console.log(typeof(num));
-num = 'Thu Ya Oo';  // String data type with ''
-//console.log(typeof(num));
+num = "Thu Ya Oo's";  // String data type with "" 
+//console.log(num);
+num = 'Thu Ya Oo said \'Hello World\' ';  // String data type with ''
+//console.log(num);
 
     // JavaScript Variable
 var dateOfBirth = 'Var Variable';
@@ -80,9 +81,9 @@ const price1 = 4.5;
 const price2 = 8;
 //const price2 = 567.78; // const variable can not be re declare
 
-//const price3 = price1 + price2;
+const price3 = price1 + price2;
 // price3 = 0; Error the value is already assigned can not assign twice;
-let price3 = price1 + price2;
+//let price3 = price1 + price2;
 //price3 = 6;
 //console.log(price3);
 
@@ -190,11 +191,24 @@ const persons = {name:"ThuYa Oo",birthYear:1997,relationship:false,age:function(
 
 const text = document.getElementById("name");
 const showName = document.getElementById("showname");
+const mouseDetect = document.getElementById("mouseevent");
+const kDown = document.getElementById("kdownText");
 
 function showNames(){
     showName.innerHTML = text.value;
 }
 
+function mouseOver(){
+    mouseDetect.innerHTML = "Mouse Over Event Detected!";
+}
+
+function mouseOut(){
+    mouseDetect.innerHTML = "Mouse Out Event Detected!";
+}
+
+function keyDown() {
+    kDown.innerHTML = "Key Down Event Detected!";
+}
 
 
 
